@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Princess+Sofia&family=Yellowtail&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+//Estilos página de entrada
+.container{
+    width: 100%;
+    background-image: url("../img/veve_portada.jpg");
+    background-size: cover;
+}
+
+.text{
+    width: 80%;
+    margin: auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.text__name{
+    color: white;
+    font-family: 'Princess Sofia', cursive;
+    font-weight: bold;
+    font-size: 7rem;
+    line-height: 4rem;
+    filter: drop-shadow(3px 3px 2.5px rgb(255, 38, 0));
+}
+
+.text__subtitle{
+    color: rgb(255, 38, 0);
+    font-size: 3rem;
+}
+
+.main__btn{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__btn-click{
+    padding: 0.8rem 2.5rem;
+    font-size: 2rem;
+    border: 1.3px solid rgb(255, 38, 0);
+    border-radius: 2.5rem;
+    color: rgb(255, 38, 0);
+    box-shadow: 0 0 2rem 2rem rgba(228, 100, 77, 0.7);
+    background-color: rgba(240, 70, 40, 0.171);
+    transition: all 0.5s;
+}
+
+.main__btn-click:hover{
+    box-shadow: 0 0 4rem 4rem rgba(228, 100, 77, 0.7);
+    background-color: rgb(255, 38, 0);
+    color: #fff;
+}
+
+@media (orientation: portrait){
+    .container{
+        background-image: url("../img/veve_veach-vertical.jpg");
+        background-size: cover;
+    }
+
+    .text__name{
+        font-size: 4rem;
+    }
+
+    .text__subtitle{
+        font-size: 2rem;
+    }
+}
+
+//Estilos header
