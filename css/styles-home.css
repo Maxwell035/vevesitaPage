@@ -178,6 +178,27 @@
   text-align: end;
 }
 
+.container {
+  position: relative;
+  max-width: 60%;
+  margin: auto;
+  padding: 1rem 0 4rem 0;
+  border: 5px solid #fc4b08;
+  margin-bottom: 3rem;
+  border-radius: 2rem;
+}
+
+.text__contact {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container__text {
+  padding: 2rem 3rem;
+}
+
 .gallery__box {
   display: -webkit-box;
   display: -ms-flexbox;
