@@ -9,16 +9,18 @@
     <link rel="stylesheet" href="./css/styles-home.css">
 </head>
 <body>
-    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false" preload="auto" id="miVideo-1">
-        <source src="./videos/twerk__veve.mp4">
-    </video>
-    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false" preload="auto" id="miVideo-2">
-        <source src="./videos/twerk.mp4">
-    </video>
+    <div class="video__box">
+        <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false" preload="auto" id="miVideo-1">
+            <source src="./videos/twerk__veve.mp4">
+        </video>
+        <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false" preload="auto" id="miVideo-2">
+            <source src="./videos/twerk.mp4">
+        </video>
+    </div>
 
     <header class="header">
         <a href="home.html" class="logo">Kassandra</a>
-        <nav class="header__nav">
+        <nav class="header__nav" id="nav">
             <ul class="header__nav-menu">
                 <li>
                     <a href="#">
@@ -54,6 +56,33 @@
                 </li>
             </ul>
         </nav>
+        <div class="menu-resp">
+            
+            <i class="bi bi-list" id="btn-menu"></i>
+        </div>
     </header>
+
+    <div class="texto">
+        <div class="text__box">
+            <h1 class="text__name">Kassandra</h1>
+            <h3 class="text__subtitle">Latin Vevesita</h3>
+        </div>
+    </div>
+    <div class="gallery__box">
+        <div class="gallery">
+            <img src="./img/foto1.jpeg" alt="foto1" class="foto">
+            <img src="./img/foto5.jpeg" alt="foto5" class="foto">
+            <img src="./img/foto6.jpeg" alt="foto6" class="foto">
+            <img src="./img/foto2.jpeg" alt="foto2" class="foto">
+            <img src="./img/foto7.jpeg" alt="foto7" class="foto">
+            <img src="./img/foto8.jpeg" alt="foto8" class="foto">
+            <img src="./img/foto9.jpeg" alt="foto9" class="foto">
+            <img src="./img/foto10.jpeg" alt="foto10" class="foto">
+            <img src="./img/foto3.jpeg" alt="foto3" class="foto">
+            <img src="./img/foto11.jpeg" alt="foto11" class="foto">
+        </div>    
+    </div>
+    
+    <script src="./js/script.js"></script>
 </body>
 </html>

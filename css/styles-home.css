@@ -8,11 +8,19 @@
   list-style: none;
 }
 
-#miVideo-1 {
+.video__box {
   width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+#miVideo-1 {
   -webkit-filter: brightness(0.2);
           filter: brightness(0.2);
   position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 80px;
 }
 
 #miVideo-2 {
@@ -20,7 +28,7 @@
 }
 
 .header {
-  position: relative;
+  position: fixed;
   border: 1.3px solid #fc4b08;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,6 +38,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 50;
+  background-color: #000;
 }
 
 .logo {
@@ -122,5 +135,211 @@
   background: linear-gradient(45deg, red, #ff6600, #ffa600);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.texto {
+  width: 100%;
+  position: relative;
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text__box {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 8rem;
+}
+
+.text__name {
+  font-size: 6rem;
+  font-family: 'Princess Sofia', cursive;
+  color: #fff;
+  -webkit-filter: drop-shadow(3px 3px 2.5px #ff3700);
+          filter: drop-shadow(3px 3px 2.5px #ff3700);
+  line-height: 4rem;
+}
+
+.text__subtitle {
+  color: #fc4b08;
+  font-size: 2.5rem;
+  text-align: end;
+}
+
+.gallery__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery {
+  width: 80%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.foto {
+  max-height: 60vh;
+  min-height: 100px;
+  max-width: 80%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+@media (orientation: portrait) {
+  #miVideo-1 {
+    display: none;
+  }
+  #miVideo-2 {
+    display: block;
+    position: fixed;
+    -webkit-filter: brightness(0.2);
+            filter: brightness(0.2);
+    top: 80px;
+  }
+  .text__name {
+    font-size: 4rem;
+  }
+}
+
+.menu-resp {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  #miVideo-1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  #miVideo-1 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 460px) and (orientation: portrait) {
+  #miVideo-2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .social-media li {
+    width: 2rem;
+    height: 2rem;
+  }
+  .social-media__icon {
+    font-size: 1rem;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .header__nav-menu {
+    width: 60%;
+  }
+}
+
+@media (max-width: 760px) {
+  .menu-resp {
+    display: block;
+    padding: 0 3rem;
+    font-size: 2rem;
+    width: 50%;
+    text-align: end;
+    cursor: pointer;
+  }
+  #btn-menu {
+    padding: 0.5rem;
+    border: 2px dashed #fc4b08;
+    color: #fc4b08;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #btn-menu:hover {
+    background-color: #fc4b08;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  .logo {
+    font-size: 2.5rem;
+    width: 50%;
+    text-align: start;
+  }
+  .header__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: -500px;
+    width: 100%;
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
+    padding: 3rem 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+  }
+  .header__nav li a {
+    text-align: center;
+  }
+  .header__nav:last-child {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header__nav:nth-child(2) {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header__nav:first-child {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+  }
+  .social-media {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    padding: 0;
+  }
+  .header__nav-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 420px) {
+  #miVideo-2 {
+    height: 100vh !important;
+  }
 }
 /*# sourceMappingURL=styles-home.css.map */
