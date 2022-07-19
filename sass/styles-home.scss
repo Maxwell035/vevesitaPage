@@ -156,50 +156,6 @@
     padding: 2rem 3rem;
 }
 
-// // .container__box{
-// //     width: 100%;
-// //     display: flex;
-// //     justify-content: center;
-// //     padding: 1rem 0 3rem;
-// // }
-
-// // .container{
-// //     display: grid;
-// //     place-items: center;
-// //     position: relative;
-// //     height: 80vh;
-// //     width: 50%;
-// //     background: #191919;
-// //     border-radius: 10px;
-// //     overflow: hidden;
-// // }
-
-// // .container::before{
-// //     content: '';
-// //     width: 30vw;
-// //     height: 150vh;
-// //     display: flex;
-// //     justify-content: center;
-// //     align-items: center;
-// //     position: absolute;
-// //     background: linear-gradient(90deg,#ff4800,#fbab00);
-// //     animation: animate 5s linear infinite;
-// // }
-
-// @keyframes animate{
-//     0% { transform: rotate(0deg);}
-//     50% { transform: rotate(180deg);  }
-//     100% { transform: rotate(360deg);}
-// }
-
-// .container::after{
-//     content: '';
-//     position: absolute;
-//     background: #191919;
-//     inset: 1rem;
-//     border-radius: 5px;
-// }
-
 .gallery__box{
     display: flex;
     justify-content: center;
