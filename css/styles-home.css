@@ -180,7 +180,8 @@
 
 .container {
   position: relative;
-  max-width: 60%;
+  width: 60%;
+  max-width: 85%;
   margin: auto;
   padding: 1rem 0 4rem 0;
   border: 5px solid #fc4b08;
@@ -243,6 +244,9 @@
   }
   .text__name {
     font-size: 4rem;
+  }
+  .container {
+    width: 85%;
   }
 }
 
